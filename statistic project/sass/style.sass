@@ -1,0 +1,336 @@
+// @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap')
+
+$color_body: #F6F8FB
+$color_black: 4px 0px 16px rgba(16, 30, 115, 0.08)
+    
+@font-face
+  font-family: "Lato-light"
+  src: url("/fonts/Lato-Light.ttf") format("truetype")
+  font-style: normal
+  font-weight: normal
+
+body
+  font-family: 'Lato-Light', Helvetica, Arial, sans-serif
+
+.logo_header
+  display: flex
+  margin: 0 auto 10px auto
+  padding-top: 24px
+  border-radius: 50px
+  max-width: 100px
+
+.nav_bar
+  background: #FFFFFF
+  box-shadow: $color_black
+  height: 1382px
+  z-index: 100
+  .header_bar
+    text-align: center
+    color: #52575C
+    text-transform: uppercase
+
+  .menu
+
+    &_item
+      list-style-type: none
+      margin-bottom: 25px
+      padding-left: 10%
+      
+      .fas
+          height: 20px
+          width: 20px
+          padding: 5px
+      span 
+          margin-left: 10px
+          
+
+    &_item:nth-child(1)
+        display: flex
+        margin-top: 28px
+    &_link
+      text-decoration: none
+      color: #52575C //#DBDDE0
+      i
+          color:#DBDDE0
+      .far
+        height: 10px
+        width: 10px
+    
+    &_link:hover
+        i
+            color: #336CFB
+            transition: 0.5s all
+        color: #336CFB
+        transition: 0.5s all
+        .fas
+            height: 16px
+.body_contains
+  background: $color_body
+  z-index: 1
+  .promo_header
+      padding: 24px 0
+      .promo_subheader
+        display: flex
+        .promo_header_icons
+          display: flex
+          align-items: center
+          .notification_icon
+            height: 16px
+            width: 16px
+        .inp_search
+          width: 35%
+          height: 35px
+          margin: 0 auto
+          border: none
+          background: #FFFFFF
+          border-radius: 100px
+          padding-left: 35px
+        .header_icons
+          display: flex
+          justify-content: flex-end
+          .icons_avatar
+            position: relative
+            display: flex
+            .icon_notification
+              position: absolute
+              left: 15px
+        .profile_avatar
+          margin-left: 26px
+          padding-right: 11%
+          .avatar_icon
+              border: 2px outset white
+              border-radius: 50%
+              
+
+.subheader_main
+  display: flex
+  justify-content: space-around
+  .subheader_containts
+    display: flex
+    justify-content: center
+    align-items: center
+    height: 88px
+    width: 255px
+    background-color: white
+    background: #FFFFFF
+    box-shadow: 0px 12px 26px rgba(16, 30, 115, 0.06)
+    border-radius: 8px
+  .subheader_title
+    display: flex
+    justify-content: center
+    flex-direction: column
+    align-items: center
+    margin-left: 24px
+  .subheader_features
+    display: flex
+    align-items: center
+    justify-content: center
+    span
+      color: #336CFB
+      margin-top: 4px
+    
+.charters
+  padding: 0 54px
+  .graphical_charters
+    margin-top: 30px
+    padding: 24px 24px
+    height: 374px
+    background: #FFFFFF
+    box-shadow: 0px 12px 26px rgba(16, 30, 115, 0.06)
+    border-radius: 8px
+    .charters_block
+      display: flex
+
+      .title_charter
+        span
+        font-style: normal
+        font-weight: bold
+        font-size: 20px
+        letter-spacing: 0.2px
+        color: #25282B
+      .applications_title
+        display: flex
+        align-items: center
+        justify-content: flex-end
+        font-weight: bold
+        font-size: 12px
+        line-height: 16px
+        letter-spacing: 0.1px
+        color: #A0A4A8
+      .vk_company_name
+        span::before
+          display: inline-block
+          content: ""
+          border: 2px solid #FAC032
+          width: 20px
+          margin: 0 10px
+      .facebook_company_name
+        span::before
+          display: inline-block
+          content: ""
+          border: 2px solid #336CFB
+          width: 20px
+          margin: 0 10px
+
+.description_features
+  padding: 0 54px
+  margin-top: 38px
+  .promo_clicks
+    padding: 24px 24px
+    height: 286px
+    background: #FFFFFF
+    box-shadow: 0px 12px 26px rgba(16, 30, 115, 0.06)
+    border-radius: 8px
+    .description
+      display: flex
+      align-items: center
+      text-align: center
+      width: 100%
+      .title_descr
+        font-style: normal
+        font-weight: bold
+        font-size: 20px
+        letter-spacing: 0.2px
+        color: #25282B
+      .applications_title
+        display: flex
+        text-align: center
+        font-weight: bold
+        font-size: 12px
+        letter-spacing: 0.1px
+        color: #A0A4A8
+        width: 100%
+        justify-content: flex-end
+    .vk_company_name
+      span::before
+        display: inline-block
+        content: ""
+        border: 2px solid #FAC032
+        width: 20px
+        margin: 0 10px
+    .facebook_company_name
+      span::before
+        display: inline-block
+        content: ""
+        border: 2px solid #336CFB
+        width: 20px
+        margin: 0 10px
+
+
+  .promo_outcome
+    padding: 24px 24px
+    height: 286px
+    background: #FFFFFF
+    box-shadow: 0px 12px 26px rgba(16, 30, 115, 0.06)
+    border-radius: 8px
+    .outcome_description
+      display: flex
+      .title_apps
+
+        span
+          padding: 24px 24px
+          font-style: normal
+          font-weight: bold
+          font-size: 20px
+          letter-spacing: 0.2px
+          color: #25282B
+      .soft_apps
+        display: flex
+        text-align: center
+        font-weight: bold
+        font-size: 12px
+        letter-spacing: 0.1px
+        color: #A0A4A8
+        width: 100%
+        justify-content: flex-end
+        align-items: center
+    .vk_company_name
+      span::before
+        display: inline-block
+        content: ""
+        border: 2px solid #FAC032
+        width: 20px
+        margin: 0 10px
+    .facebook_company_name
+      span::before
+        display: inline-block
+        content: ""
+        border: 2px solid #336CFB
+        width: 20px
+        margin: 0 10px
+
+
+
+
+
+
+.table_companies
+  width: 100%
+  padding: 0 54px
+  margin-top: 38px
+  .companies_graphic
+    min-height: 410px
+    background: #FFFFFF
+    box-shadow: 0px 12px 26px rgba(16, 30, 115, 0.06)
+    border-radius: 8px
+    .name_table
+      padding: 24px 24px
+      font-style: normal
+      font-weight: bold
+      font-size: 20px
+      letter-spacing: 0.2px
+      color: #25282B
+      .table
+        font-family: Lato
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 20px
+        letter-spacing: 0.1px
+        color: #52575C
+tr.header_tags
+  background: rgba(232, 232, 232, 0.2)
+  margin-left: 5px
+  .header_tag
+    font-family: Lato
+    font-style: normal
+    font-size: 14px
+    line-height: 20px
+    color: #25282B
+    
+th
+  .green
+    border-radius: 100%
+    height: 15px
+    width: 15px
+    background-color: #2ed573
+  .red
+    border-radius: 100%
+    height: 15px
+    width: 15px
+    background-color: #FF6760
+  .orange
+    border-radius: 100%
+    height: 15px
+    width: 15px
+    background-color: #FAC032
+  .company_title
+    font-family: Lato
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 20px
+    letter-spacing: 0.1px
+    color: #52575C
+  td
+    .edit_items
+      &::before
+        content: ''
+        display: block
+        width: 16px
+        height: 16px
+        background-color: #A0A4A8
+  
+
+table
+  border-collapse: inherit
